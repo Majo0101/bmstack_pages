@@ -41,6 +41,7 @@ export default function Contact({ language = 'EN' }) {
             <p>{text.eyebrow}</p>
             <h2 id="contact-title">
               <span>{text.titleStart}</span>
+              <span>{text.titleMiddle}</span>
               <span>{text.titleEnd}</span>
             </h2>
           </div>
