@@ -1,0 +1,141 @@
+const certificates = [
+  {
+    code: 'DP-700',
+    title: 'Microsoft Certified: Fabric Data Engineer Associate',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 28 Jul 2025', SK: 'Vydané 28. 7. 2025' },
+    description: {
+      EN: 'Implementing and managing analytics solutions with Microsoft Fabric, from data ingestion and transformation to analytics pipelines and lakehouse workloads.',
+      SK: 'Implementácia a správa analytických riešení v Microsoft Fabric – od ingestovania a transformácie dát po analytické pipeline a lakehouse workloady.',
+    },
+    image: '/certificates/dp700-small.jpg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/481716C9B938F624?sharingId=22293332490A649C',
+    featured: true,
+  },
+  {
+    code: 'AI-900',
+    title: 'Microsoft Certified: Azure AI Fundamentals',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 03 Jul 2025', SK: 'Vydané 3. 7. 2025' },
+    description: {
+      EN: 'Fundamentals of AI workloads in Azure, including machine learning, computer vision, natural language processing, and generative AI.',
+      SK: 'Základy AI workloadov v Azure vrátane machine learningu, computer vision, natural language processing a generatívnej AI.',
+    },
+    image: '/certificates/ai900-small.jpg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/12479247AAE2DC29?sharingId=22293332490A649C',
+  },
+  {
+    code: 'DP-600',
+    title: 'Microsoft Certified: Fabric Analytics Engineer Associate',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 03 Feb 2025', SK: 'Vydané 3. 2. 2025' },
+    description: {
+      EN: 'Building analytics solutions in Microsoft Fabric, with a focus on data preparation, transformation, and semantic models.',
+      SK: 'Tvorba analytických riešení v Microsoft Fabric so zameraním na prípravu a transformáciu dát a sémantické modely.',
+    },
+    image: '/certificates/dp600-small.jpg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/25C3B14E97ACC957?sharingId=22293332490A649C',
+  },
+  {
+    code: 'DP-900',
+    title: 'Microsoft Certified: Azure Data Fundamentals',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 15 Nov 2024', SK: 'Vydané 15. 11. 2024' },
+    description: {
+      EN: 'Core data concepts in Azure, including relational and non-relational models, data processing, and analytics workloads.',
+      SK: 'Základné dátové koncepty v Azure vrátane relačných a nerelačných modelov, spracovania dát a analytických workloadov.',
+    },
+    image: '/certificates/dp900-small.jpg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/27926BFC8DE6506?sharingId=22293332490A649C',
+  },
+  {
+    code: 'AZURE DATABRICKS',
+    title: 'Azure Databricks & Spark for Data Engineers',
+    provider: 'Udemy',
+    date: { EN: 'Issued 10 Mar 2024', SK: 'Vydané 10. 3. 2024' },
+    description: {
+      EN: 'Data engineering with Azure Databricks, Apache Spark, PySpark, Spark SQL, notebooks, clusters, and lakehouse architectures.',
+      SK: 'Data engineering s Azure Databricks, Apache Spark, PySpark, Spark SQL, notebookmi, clustrami a lakehouse architektúrami.',
+    },
+    image: '/certificates/udemy-6-small.jpg',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-99fbeff4-f5fe-41cb-8ae8-0b105ea39309/',
+  },
+  {
+    code: 'PANDAS',
+    title: 'Data Analysis with Pandas and Python',
+    provider: 'Udemy',
+    date: { EN: 'Issued 11 Apr 2023', SK: 'Vydané 11. 4. 2023' },
+    description: {
+      EN: 'Practical analysis of structured datasets with Python and Pandas, including grouping, pivoting, joins, and transformations.',
+      SK: 'Praktická analýza štruktúrovaných datasetov v Python a Pandas vrátane grouping, pivoting, joins a transformácií.',
+    },
+    image: '/certificates/udemy-7-small.jpg',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-f578a39e-385c-4054-a32d-959fb4030bbb/',
+  },
+  {
+    code: 'PYTHON / ML',
+    title: 'Python for Data Science and Machine Learning Bootcamp',
+    provider: 'Udemy',
+    date: { EN: 'Issued 27 Mar 2023', SK: 'Vydané 27. 3. 2023' },
+    description: {
+      EN: 'Data science workflows with NumPy, Pandas, visualization libraries, scikit-learn, and an introduction to Spark.',
+      SK: 'Data science workflow s NumPy, Pandas, vizualizačnými knižnicami, scikit-learn a úvodom do Spark.',
+    },
+    image: '/certificates/udemy-2-small.jpg',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-2bbe3531-d9bc-4274-b52a-c5ae1310e497/',
+  },
+  {
+    code: 'MYSQL',
+    title: 'The Ultimate MySQL Bootcamp',
+    provider: 'Udemy',
+    date: { EN: 'Issued 10 Mar 2023', SK: 'Vydané 10. 3. 2023' },
+    description: {
+      EN: 'SQL fundamentals, joins, aggregations, window functions, and database design for relational datasets.',
+      SK: 'Základy SQL, joins, agregácie, window functions a návrh databáz pre relačné datasety.',
+    },
+    image: '/certificates/udemy-5-small.jpg',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-65bd5a60-6463-41f2-95e2-66feb4059340/',
+  },
+  {
+    code: 'POWER BI',
+    title: 'Microsoft Power BI: Smart Data Visualization',
+    provider: 'Seduo',
+    date: { EN: 'Issued 30 Apr 2023', SK: 'Vydané 30. 4. 2023' },
+    description: {
+      EN: 'Interactive data visualization, data preparation, DAX, and publishing Power BI dashboards online.',
+      SK: 'Interaktívna vizualizácia dát, príprava dát, DAX a publikovanie Power BI dashboardov online.',
+    },
+    image: '/certificates/seduo-2-small.jpg',
+  },
+]
+
+const certificationContent = {
+  EN: {
+    label: 'Certifications',
+    eyebrow: 'Continuous learning / verified skills',
+    title: 'Proof behind the progress.',
+    intro: 'A focused selection of credentials supporting my work across data science, analytics, and data engineering.',
+    verify: 'Verify certificate',
+    recorded: 'Certificate recorded',
+    provider: 'Issuer',
+    count: 'Selected credentials',
+    previous: 'Previous certificates',
+    next: 'Next certificates',
+    browse: 'Browse certificates',
+  },
+  SK: {
+    label: 'Certifikáty',
+    eyebrow: 'Kontinuálne vzdelávanie / overené znalosti',
+    title: 'Výsledky podložené certifikátmi.',
+    intro: 'Výber certifikátov, ktoré dopĺňajú moju prax v data science, analytike a data engineering.',
+    verify: 'Overiť certifikát',
+    recorded: 'Certifikát evidovaný',
+    provider: 'Vydavateľ',
+    count: 'Vybrané certifikáty',
+    previous: 'Predchádzajúce certifikáty',
+    next: 'Ďalšie certifikáty',
+    browse: 'Prehľadávať certifikáty',
+  },
+}
+
+export { certificates, certificationContent }

@@ -4,6 +4,7 @@ import TechBanner from './components/TechBanner.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
+import Certifications from './components/Certifications.jsx'
 
 function App() {
   const [language, setLanguage] = useState('EN')
@@ -17,6 +18,7 @@ function App() {
       </div>
       <Education language={language} />
       <Experience language={language} />
+      <Certifications language={language} />
     </>
   )
 }
