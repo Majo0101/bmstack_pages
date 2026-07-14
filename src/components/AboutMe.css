@@ -126,6 +126,9 @@
 .about-portrait {
   position: absolute;
   inset: 8%;
+  overflow: hidden;
+  border-radius: 50%;
+  isolation: isolate;
 }
 
 .about-photo {
@@ -146,6 +149,7 @@
   height: 136%;
   animation: about-rotate 70s linear infinite;
   pointer-events: none;
+  will-change: transform;
 }
 
 .about-portrait-tag {
@@ -418,6 +422,19 @@
 
   .about-portrait-shell {
     width: min(84vw, 380px);
+  }
+
+  .about-frame {
+    inset: -14%;
+    width: 128%;
+    height: 128%;
+  }
+
+  .about-portrait-tag {
+    right: -2%;
+    bottom: 7%;
+    padding: 11px 14px;
+    border-width: 4px;
   }
 
   .about-copy h1 {
