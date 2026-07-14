@@ -50,6 +50,10 @@
 .education-layout {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .education-header {

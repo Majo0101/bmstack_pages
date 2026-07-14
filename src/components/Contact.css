@@ -52,7 +52,7 @@
 .contact-shell::after {
   position: absolute;
   z-index: 0;
-  right: -30px;
+  right: calc(var(--content-edge) - clamp(90px, 9vw, 175px));
   bottom: clamp(-280px, -18svh, -150px);
   width: min(34vw, 44svh, 500px);
   aspect-ratio: 1;
@@ -68,6 +68,10 @@
 .contact-footerline {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-header {

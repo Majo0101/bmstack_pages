@@ -78,7 +78,7 @@ export default function Certifications({ language = 'EN' }) {
           <p>{text.eyebrow}</p>
           <h2 id="certifications-title">{text.title}</h2>
           <div>
-            <span aria-hidden="true">↳</span>
+            <span className="certifications-intro-marker" aria-hidden="true" />
             <p>{text.intro}</p>
           </div>
         </div>

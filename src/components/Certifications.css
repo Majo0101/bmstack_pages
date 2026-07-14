@@ -52,6 +52,10 @@
 .certificate-rail {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .certifications-header {
@@ -144,10 +148,29 @@
   color: #62645e;
 }
 
-.certifications-intro > div > span {
-  color: #242424;
-  font-size: 1.2rem;
-  font-weight: 800;
+.certifications-intro-marker {
+  display: flex;
+  width: 30px;
+  padding-top: 0.65rem;
+  align-items: center;
+  gap: 5px;
+}
+
+.certifications-intro-marker::before {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  content: '';
+  background: #c0f203;
+  border: 1px solid #242424;
+  border-radius: 50%;
+}
+
+.certifications-intro-marker::after {
+  width: 18px;
+  height: 1px;
+  content: '';
+  background: rgba(36, 36, 36, 0.45);
 }
 
 .certifications-intro > div p {
@@ -158,7 +181,7 @@
 
 .certificate-featured,
 .certificate-rail {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -446,7 +469,7 @@
 
 .certificate-rail {
   display: flex;
-  margin-right: calc(clamp(22px, 5vw, 78px) * -1);
+  margin-right: auto;
   padding: 24px max(clamp(22px, 5vw, 78px), calc(100% - clamp(310px, 38vw, 510px))) 14px 0;
   gap: 18px;
   overflow-x: auto;

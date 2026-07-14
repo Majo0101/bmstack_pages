@@ -130,6 +130,10 @@
 .intro-barcode,
 .intro-content,
 .intro-footer {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-right: auto;
+  margin-left: auto;
   opacity: 0;
   transform: translateY(18px);
 }

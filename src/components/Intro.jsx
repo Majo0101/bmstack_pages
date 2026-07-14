@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import introContent from '../content/intro.js'
+import { scrollToSection } from '../utils/navigation.js'
 import './Intro.css'
 
 const languages = ['EN', 'SK']
@@ -16,6 +17,26 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
   const text = introContent[language.toUpperCase()] ?? introContent.EN
   const [progress, setProgress] = useState(0)
   const [isReady, setIsReady] = useState(false)
+  const [isScrollLocked, setIsScrollLocked] = useState(true)
+
+  useLayoutEffect(() => {
+    const resetScroll = () => window.scrollTo(0, 0)
+    const frame = window.requestAnimationFrame(resetScroll)
+
+    resetScroll()
+    window.addEventListener('load', resetScroll, { once: true })
+
+    return () => {
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener('load', resetScroll)
+    }
+  }, [])
+
+  useLayoutEffect(() => {
+    document.documentElement.classList.toggle('intro-scroll-locked', isScrollLocked)
+
+    return () => document.documentElement.classList.remove('intro-scroll-locked')
+  }, [isScrollLocked])
 
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -23,6 +44,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
     if (reducedMotion) {
       setProgress(100)
       setIsReady(true)
+      setIsScrollLocked(false)
       return undefined
     }
 
@@ -32,6 +54,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
       window.setTimeout(() => setProgress(84), 620),
       window.setTimeout(() => setProgress(100), 860),
       window.setTimeout(() => setIsReady(true), 1180),
+      window.setTimeout(() => setIsScrollLocked(false), 2120),
     ]
 
     return () => timers.forEach(window.clearTimeout)
@@ -61,7 +84,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
       <div className="intro-grid" aria-hidden="true" />
 
       <nav className="intro-nav" aria-label="Primary navigation">
-        <a className="intro-brand" href="#top" aria-label="Marian Bodnar home">
+        <a className="intro-brand" href="#top" onClick={(event) => scrollToSection(event, 'top')} aria-label="Marian Bodnar home">
           <span>MB</span>
           <span className="intro-brand-copy">
             <strong>{text.name}</strong>
@@ -70,9 +93,9 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
         </a>
 
         <div className="intro-links">
-          <a href="#about">{text.about}</a>
-          <a href="#experience">{text.experience}</a>
-          <a href="#contact">{text.contact}</a>
+          <a href="#about" onClick={(event) => scrollToSection(event, 'about')}>{text.about}</a>
+          <a href="#experience" onClick={(event) => scrollToSection(event, 'experience')}>{text.experience}</a>
+          <a href="#contact" onClick={(event) => scrollToSection(event, 'contact')}>{text.contact}</a>
         </div>
 
         <button className="intro-language" type="button" onClick={cycleLanguage}>
@@ -105,7 +128,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
 
           <div className="intro-summary-row">
             <p>{text.intro}</p>
-            <a className="intro-explore" href="#about">
+            <a className="intro-explore" href="#about" onClick={(event) => scrollToSection(event, 'about')}>
               <span>{text.explore}</span>
               <ArrowDownIcon />
             </a>

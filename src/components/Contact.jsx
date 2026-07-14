@@ -1,4 +1,5 @@
 import contactContent from '../content/contact.js'
+import { scrollToSection } from '../utils/navigation.js'
 import './Contact.css'
 
 const email = 'bmstack@proton.me'
@@ -76,7 +77,7 @@ export default function Contact({ language = 'EN' }) {
             <Barcode />
             <span>BM / DATA / PROFILE / {year}</span>
           </div>
-          <a href="#top" aria-label={text.backToTop}>
+          <a href="#top" onClick={(event) => scrollToSection(event, 'top')} aria-label={text.backToTop}>
             <span>{text.backToTop}</span>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 20V4m0 0-6 6m6-6 6 6" />

@@ -22,7 +22,7 @@
 .about-section::before {
   position: absolute;
   top: -22%;
-  right: -11%;
+  right: calc(var(--content-edge) - min(20.9vw, 308px));
   width: min(38vw, 560px);
   aspect-ratio: 1;
   content: '';
@@ -37,6 +37,10 @@
 .about-footer {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .about-topline {
