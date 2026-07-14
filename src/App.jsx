@@ -3,6 +3,7 @@ import Intro from './components/Intro.jsx'
 import TechBanner from './components/TechBanner.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Education from './components/Education.jsx'
+import Experience from './components/Experience.jsx'
 
 function App() {
   const [language, setLanguage] = useState('EN')
@@ -15,6 +16,7 @@ function App() {
         <AboutMe language={language} />
       </div>
       <Education language={language} />
+      <Experience language={language} />
     </>
   )
 }
