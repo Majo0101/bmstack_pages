@@ -468,9 +468,11 @@
 }
 
 .certificate-rail {
+  --certificate-card-width: clamp(310px, 38vw, 510px);
   display: flex;
+  min-width: 0;
   margin-right: auto;
-  padding: 24px max(clamp(22px, 5vw, 78px), calc(100% - clamp(310px, 38vw, 510px))) 14px 0;
+  padding: 24px 0 14px;
   gap: 18px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -481,9 +483,16 @@
   scrollbar-width: thin;
 }
 
+.certificate-rail::after {
+  min-width: 0;
+  flex: 0 0 calc(100% - var(--certificate-card-width) - 18px);
+  content: '';
+  pointer-events: none;
+}
+
 .certificate-rail > li {
-  width: clamp(310px, 38vw, 510px);
-  min-width: clamp(310px, 38vw, 510px);
+  width: var(--certificate-card-width);
+  min-width: var(--certificate-card-width);
   border-radius: 22px;
   cursor: pointer;
   outline: none;
@@ -604,13 +613,13 @@
   }
 
   .certificate-rail {
+    --certificate-card-width: min(82vw, 370px);
     margin-right: -18px;
-    padding-right: max(18px, calc(100% - min(82vw, 370px)));
   }
 
   .certificate-rail > li {
-    width: min(82vw, 370px);
-    min-width: min(82vw, 370px);
+    width: var(--certificate-card-width);
+    min-width: var(--certificate-card-width);
   }
 
   .certificate-rail .certificate-body {

@@ -30,10 +30,8 @@
   overflow: hidden;
   color: #242424;
   background: #c0f203;
-  border-top: 1px solid #242424;
-  border-bottom: 1px solid #242424;
   transform: rotate(-1.2deg);
-  box-shadow: 0 14px 30px rgba(36, 36, 36, 0.12);
+  box-shadow: 0 12px 26px rgba(36, 36, 36, 0.08);
 }
 
 .tech-track {
@@ -57,7 +55,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  border-right: 1px solid rgba(36, 36, 36, 0.3);
+  border-right: 1px solid rgba(36, 36, 36, 0.14);
 }
 
 .tech-track img {

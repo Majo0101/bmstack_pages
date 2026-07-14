@@ -66,6 +66,11 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
     onLanguageChange?.(nextLanguage)
   }
 
+  const reloadPage = (event) => {
+    event.preventDefault()
+    window.location.reload()
+  }
+
   return (
     <header className={`intro ${isReady ? 'intro-ready' : 'intro-loading'}`} id="top">
       <div className={`intro-loader ${isReady ? 'is-finished' : ''}`} aria-hidden="true">
@@ -83,9 +88,14 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
 
       <div className="intro-grid" aria-hidden="true" />
 
+      <div className="intro-divider" aria-hidden="true" />
+
+      <div className="intro-barcode" aria-hidden="true">
+        <span>BMSTACK / DIGITAL RESUME / 2026</span>
+      </div>
+
       <nav className="intro-nav" aria-label="Primary navigation">
-        <a className="intro-brand" href="#top" onClick={(event) => scrollToSection(event, 'top')} aria-label="Marian Bodnar home">
-          <span>MB</span>
+        <a className="intro-brand" href={window.location.pathname} onClick={reloadPage} aria-label="Reload Marian Bodnar home">
           <span className="intro-brand-copy">
             <strong>{text.name}</strong>
             <small>{text.role}</small>
@@ -98,15 +108,20 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
           <a href="#contact" onClick={(event) => scrollToSection(event, 'contact')}>{text.contact}</a>
         </div>
 
-        <button className="intro-language" type="button" onClick={cycleLanguage}>
-          <span>Language</span>
-          {language.toUpperCase()}
+        <button
+          className={`intro-language is-${language.toLowerCase()}`}
+          type="button"
+          onClick={cycleLanguage}
+          aria-label={`Switch language to ${language.toUpperCase() === 'EN' ? 'Slovak' : 'English'}`}
+        >
+          <span className="intro-language-label">Language</span>
+          <span className="intro-language-options" aria-hidden="true">
+            <i />
+            <b>EN</b>
+            <b>SK</b>
+          </span>
         </button>
       </nav>
-
-      <div className="intro-barcode" aria-hidden="true">
-        <span>BMSTACK / DIGITAL RESUME / 2026</span>
-      </div>
 
       <div className="intro-content">
         <div className="intro-side-note">

@@ -58,7 +58,7 @@ function EducationIllustration({ label }) {
       <g className="education-art-database" aria-hidden="true">
         <ellipse cx="360" cy="464" rx="62" ry="20" />
         <path d="M298 464v77c0 11 28 20 62 20s62-9 62-20v-77M298 502c0 11 28 20 62 20s62-9 62-20" />
-        <path className="education-art-data-line" d="M323 480h74M323 500h46M323 539h74" />
+        <path className="education-art-data-line" d="M323 500h74M323 539h74" />
       </g>
 
       <g className="education-art-pipeline" aria-hidden="true">
