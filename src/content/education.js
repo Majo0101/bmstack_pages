@@ -5,6 +5,9 @@ const educationContent = {
     intro:
       'A technical foundation followed by applied informatics, data-focused study and continuous professional development.',
     current: 'Current',
+    artLabel: 'Data and information technology learning path',
+    pathAccent: 'Continuous',
+    pathCaption: 'learning path',
     entries: [
       {
         period: '2006 — 2010',
@@ -39,6 +42,9 @@ const educationContent = {
     intro:
       'Technický základ, aplikovaná informatika, štúdium zamerané na dáta a neustály odborný rozvoj.',
     current: 'Aktuálne',
+    artLabel: 'Vzdelávacia cesta v oblasti dát a informačných technológií',
+    pathAccent: 'Kontinuálna',
+    pathCaption: 'vzdelávacia cesta',
     entries: [
       {
         period: '2006 — 2010',
