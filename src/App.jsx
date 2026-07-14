@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe.jsx'
 import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Certifications from './components/Certifications.jsx'
+import Contact from './components/Contact.jsx'
 
 function App() {
   const [language, setLanguage] = useState('EN')
@@ -19,6 +20,7 @@ function App() {
       <Education language={language} />
       <Experience language={language} />
       <Certifications language={language} />
+      <Contact language={language} />
     </>
   )
 }
