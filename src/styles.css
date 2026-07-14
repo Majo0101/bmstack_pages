@@ -56,24 +56,69 @@ img {
     linear-gradient(rgba(36, 36, 36, 0.055) 1px, transparent 1px),
     linear-gradient(90deg, rgba(36, 36, 36, 0.055) 1px, transparent 1px);
   background-size: 48px 48px;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 120px,
-    rgba(0, 0, 0, 0.12) 225px,
-    rgba(0, 0, 0, 0.72) 390px,
-    #000 520px
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 120px,
-    rgba(0, 0, 0, 0.12) 225px,
-    rgba(0, 0, 0, 0.72) 390px,
-    #000 520px
-  );
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 120px,
+      rgba(0, 0, 0, 0.12) 225px,
+      rgba(0, 0, 0, 0.72) 390px,
+      #000 520px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      rgba(0, 0, 0, 0.18) 4%,
+      #000 14%,
+      #000 86%,
+      rgba(0, 0, 0, 0.18) 96%,
+      transparent 100%
+    );
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 120px,
+      rgba(0, 0, 0, 0.12) 225px,
+      rgba(0, 0, 0, 0.72) 390px,
+      #000 520px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      rgba(0, 0, 0, 0.18) 4%,
+      #000 14%,
+      #000 86%,
+      rgba(0, 0, 0, 0.18) 96%,
+      transparent 100%
+    );
+  mask-composite: intersect;
   pointer-events: none;
 }
 
 .profile-flow > * {
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 620px) {
+  .profile-flow::before {
+    -webkit-mask-image:
+      linear-gradient(
+        to bottom,
+        transparent 100px,
+        rgba(0, 0, 0, 0.18) 190px,
+        #000 380px
+      ),
+      linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(
+        to bottom,
+        transparent 100px,
+        rgba(0, 0, 0, 0.18) 190px,
+        #000 380px
+      ),
+      linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-composite: intersect;
+  }
 }
