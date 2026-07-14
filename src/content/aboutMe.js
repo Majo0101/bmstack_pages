@@ -6,7 +6,7 @@ const aboutMeContent = {
     intro:
       'I am a Data Scientist focused on analytics and practical data work. My toolkit includes Python, SQL, Apache Spark, Microsoft Fabric and Databricks. I also hold Data Engineering certifications and continue building experience through work and study.',
     focusLabel: 'Current focus',
-    focus: 'Data science & analytics',
+    focus: 'Data Science & Engineering',
     toolsLabel: 'Core toolkit',
     tools: 'Python · SQL · Spark · Fabric · Databricks',
     cv: 'Download résumé',
@@ -22,7 +22,7 @@ const aboutMeContent = {
     intro:
       'Som Data Scientist zameraný na analytiku a praktickú prácu s dátami. Pracujem s Python, SQL, Apache Spark, Microsoft Fabric a Databricks. Mám tiež certifikácie v oblasti Data Engineering a ďalej získavam skúsenosti prácou aj štúdiom.',
     focusLabel: 'Aktuálne zameranie',
-    focus: 'Data science a analytika',
+    focus: 'Data Science & Engineering',
     toolsLabel: 'Hlavné nástroje',
     tools: 'Python · SQL · Spark · Fabric · Databricks',
     cv: 'Stiahnuť životopis',

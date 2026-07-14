@@ -1,26 +1,22 @@
 .about-page {
   min-height: 100vh;
-  padding: clamp(12px, 2vw, 28px);
-  background: #f3f3ef;
+  padding: 0;
+  background: transparent;
 }
 
 .about-section {
   position: relative;
   display: flex;
-  width: min(1480px, 100%);
-  min-height: calc(100vh - clamp(24px, 4vw, 56px));
-  margin: 0 auto;
-  padding: clamp(24px, 4vw, 64px);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: clamp(46px, 5vw, 78px) clamp(22px, 5vw, 78px) clamp(28px, 4vw, 64px);
   overflow: hidden;
   flex-direction: column;
-  background:
-    linear-gradient(rgba(36, 36, 36, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(36, 36, 36, 0.055) 1px, transparent 1px),
-    #fff;
-  background-size: 48px 48px;
-  border: 1px solid rgba(36, 36, 36, 0.14);
-  border-radius: 28px;
-  box-shadow: 0 24px 80px rgba(36, 36, 36, 0.12);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .about-section::before {
@@ -399,7 +395,7 @@
 
   .about-section {
     min-height: 100vh;
-    padding: 22px 18px 26px;
+    padding: 34px 18px 26px;
     border: 0;
     border-radius: 0;
   }

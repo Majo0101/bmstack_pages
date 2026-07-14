@@ -39,3 +39,41 @@ img {
   color: #242424;
   background: #c0f203;
 }
+
+.profile-flow {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  isolation: isolate;
+}
+
+.profile-flow::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: '';
+  background:
+    linear-gradient(rgba(36, 36, 36, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36, 36, 36, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 120px,
+    rgba(0, 0, 0, 0.12) 225px,
+    rgba(0, 0, 0, 0.72) 390px,
+    #000 520px
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 120px,
+    rgba(0, 0, 0, 0.12) 225px,
+    rgba(0, 0, 0, 0.72) 390px,
+    #000 520px
+  );
+  pointer-events: none;
+}
+
+.profile-flow > * {
+  position: relative;
+  z-index: 1;
+}

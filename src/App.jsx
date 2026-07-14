@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <Intro language={language} onLanguageChange={setLanguage} />
-      <TechBanner language={language} />
-      <div id="about">
-        <AboutMe language={language} />
+      <div className="profile-flow">
+        <TechBanner language={language} />
+        <div id="about">
+          <AboutMe language={language} />
+        </div>
       </div>
       <Education language={language} />
       <Experience language={language} />
