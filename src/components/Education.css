@@ -214,6 +214,48 @@
   line-height: 1.72;
 }
 
+.education-project-link {
+  display: inline-flex;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 0 7px 0 17px;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  background: #242424;
+  border: 1px solid #242424;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.education-project-link span {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  color: #242424;
+  background: #c0f203;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.education-project-link:not([aria-disabled='true']):hover,
+.education-project-link:not([aria-disabled='true']):focus-visible {
+  color: #242424;
+  background: #c0f203;
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.education-project-link[aria-disabled='true'] {
+  cursor: default;
+}
+
 .education-visual {
   position: relative;
 }

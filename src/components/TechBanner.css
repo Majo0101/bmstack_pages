@@ -30,8 +30,8 @@
 
 .tech-control {
   display: inline-grid;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   place-items: center;
   border: 1px solid rgba(36, 36, 36, 0.24);

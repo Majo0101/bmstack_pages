@@ -38,8 +38,8 @@
 }
 
 .intro-loader-meta span {
-  color: #777973;
-  font-size: clamp(0.56rem, 0.8vw, 0.7rem);
+  color: #9a9c95;
+  font-size: 0.75rem;
 }
 
 .intro-loader-meta strong {
@@ -217,9 +217,9 @@
 
 .intro-brand-copy small {
   margin-top: 3px;
-  color: #777973;
+  color: #9a9c95;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 0.58rem;
+  font-size: 0.75rem;
   letter-spacing: 0.04em;
 }
 
@@ -230,7 +230,10 @@
 
 .intro-links a {
   position: relative;
+  display: inline-flex;
+  min-height: 44px;
   padding: 10px 0;
+  align-items: center;
   color: #a6a8a1;
   font-size: 0.7rem;
   font-weight: 700;
@@ -264,7 +267,7 @@
 
 .intro-language {
   display: inline-flex;
-  min-height: 42px;
+  min-height: 44px;
   margin-left: auto;
   padding: 0 6px 0 17px;
   align-items: center;
@@ -389,7 +392,7 @@
 .intro-side-note p {
   max-width: 180px;
   margin: 18px 0 0;
-  color: #777973;
+  color: #9a9c95;
   font-size: 0.78rem;
   line-height: 1.65;
 }
@@ -509,9 +512,9 @@
   gap: 20px;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.17);
-  color: #666862;
+  color: #9a9c95;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 0.56rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;

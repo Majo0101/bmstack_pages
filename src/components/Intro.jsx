@@ -4,6 +4,23 @@ import { scrollToSection } from '../utils/navigation.js'
 import './Intro.css'
 
 const languages = ['EN', 'SK']
+const introSeenKey = 'bmstack:intro-seen'
+
+function hasSeenIntro() {
+  try {
+    return window.sessionStorage.getItem(introSeenKey) === 'true'
+  } catch {
+    return false
+  }
+}
+
+function rememberIntro() {
+  try {
+    window.sessionStorage.setItem(introSeenKey, 'true')
+  } catch {
+    // The intro remains fully functional when storage is unavailable.
+  }
+}
 
 function ArrowDownIcon() {
   return (
@@ -15,9 +32,10 @@ function ArrowDownIcon() {
 
 export default function Intro({ language = 'EN', onLanguageChange }) {
   const text = introContent[language.toUpperCase()] ?? introContent.EN
-  const [progress, setProgress] = useState(0)
-  const [isReady, setIsReady] = useState(false)
-  const [isScrollLocked, setIsScrollLocked] = useState(true)
+  const [skipIntro] = useState(hasSeenIntro)
+  const [progress, setProgress] = useState(skipIntro ? 100 : 0)
+  const [isReady, setIsReady] = useState(skipIntro)
+  const [isScrollLocked, setIsScrollLocked] = useState(!skipIntro)
 
   useLayoutEffect(() => {
     const resetScroll = () => window.scrollTo(0, 0)
@@ -41,7 +59,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-    if (reducedMotion) {
+    if (reducedMotion || skipIntro) {
       setProgress(100)
       setIsReady(true)
       setIsScrollLocked(false)
@@ -54,11 +72,14 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
       window.setTimeout(() => setProgress(84), 620),
       window.setTimeout(() => setProgress(100), 860),
       window.setTimeout(() => setIsReady(true), 1180),
-      window.setTimeout(() => setIsScrollLocked(false), 2120),
+      window.setTimeout(() => {
+        setIsScrollLocked(false)
+        rememberIntro()
+      }, 2120),
     ]
 
     return () => timers.forEach(window.clearTimeout)
-  }, [])
+  }, [skipIntro])
 
   const cycleLanguage = () => {
     const currentIndex = languages.indexOf(language.toUpperCase())

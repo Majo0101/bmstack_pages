@@ -24,6 +24,9 @@ const educationContent = {
         school: 'Paneuropean University, Bratislava',
         description:
           'Studies focused on data mining methods and their application in large-scale data warehouse environments (Big Data), including an introduction to business intelligence and analytical systems.',
+        projectLabel: 'View bachelor thesis',
+        projectUrl: '#bachelor-thesis',
+        projectPlaceholder: true,
       },
       {
         period: '2025 — Present',
@@ -61,6 +64,9 @@ const educationContent = {
         school: 'Paneurópska vysoká škola, Bratislava',
         description:
           'Štúdium zamerané na metódy dolovania dát (data mining) a ich využitie v prostredí rozsiahlych dátových skladov (Big Data), vrátane úvodu do nástrojov business intelligence a analytických systémov.',
+        projectLabel: 'Zobraziť bakalársku prácu',
+        projectUrl: '#bachelor-thesis',
+        projectPlaceholder: true,
       },
       {
         period: '2025 — Aktuálne',

@@ -134,6 +134,18 @@ export default function Education({ language = 'EN' }) {
                     <p className="education-field">{entry.field}</p>
                     <p className="education-school">{entry.school}</p>
                     <p className="education-description">{entry.description}</p>
+                    {entry.projectUrl && (
+                      <a
+                        className="education-project-link"
+                        href={entry.projectUrl}
+                        aria-disabled={entry.projectPlaceholder || undefined}
+                        tabIndex={entry.projectPlaceholder ? -1 : undefined}
+                        onClick={entry.projectPlaceholder ? (event) => event.preventDefault() : undefined}
+                      >
+                        {entry.projectLabel}
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                    )}
                   </article>
                 </li>
               ))}

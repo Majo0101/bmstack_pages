@@ -318,9 +318,9 @@
 
 .experience-location {
   margin: 7px 0 0;
-  color: #6f716b;
+  color: #a6a8a1;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 0.62rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -340,9 +340,9 @@
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.11);
-  color: #62645f;
+  color: #9a9c95;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
