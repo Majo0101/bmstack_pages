@@ -17,15 +17,17 @@ function App() {
   return (
     <>
       <Intro language={language} onLanguageChange={setLanguage} />
-      <div className="profile-flow">
-        <TechBanner language={language} />
-        <div id="about">
-          <AboutMe language={language} />
+      <main>
+        <div className="profile-flow">
+          <TechBanner language={language} />
+          <div id="about">
+            <AboutMe language={language} />
+          </div>
         </div>
-      </div>
-      <Education language={language} />
-      <Experience language={language} />
-      <Certifications language={language} />
+        <Education language={language} />
+        <Experience language={language} />
+        <Certifications language={language} />
+      </main>
       <Contact language={language} />
     </>
   )

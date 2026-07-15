@@ -22,6 +22,39 @@
   text-transform: uppercase;
 }
 
+.tech-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-control {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(36, 36, 36, 0.24);
+  border-radius: 50%;
+  color: #242424;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.tech-control:hover,
+.tech-control:focus-visible {
+  border-color: #242424;
+  color: #c0f203;
+  background: #242424;
+}
+
+.tech-control:focus-visible {
+  outline: 3px solid rgba(192, 242, 3, 0.45);
+  outline-offset: 3px;
+}
+
 .tech-ribbon {
   position: relative;
   z-index: 1;
@@ -38,6 +71,11 @@
   display: flex;
   width: max-content;
   animation: tech-scroll 34s linear infinite;
+}
+
+.tech-ribbon:hover .tech-track,
+.tech-ribbon.is-paused .tech-track {
+  animation-play-state: paused;
 }
 
 .tech-track ul {

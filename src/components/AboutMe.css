@@ -190,7 +190,7 @@
   text-transform: uppercase;
 }
 
-.about-copy h1 {
+.about-copy h2 {
   max-width: 690px;
   margin: 0;
   font-size: clamp(2.8rem, 5.1vw, 5.8rem);
@@ -200,7 +200,7 @@
   text-wrap: balance;
 }
 
-.about-copy h1::after {
+.about-copy h2::after {
   display: inline-block;
   width: 0.24em;
   height: 0.24em;
@@ -387,7 +387,7 @@
     max-width: 760px;
   }
 
-  .about-copy h1 {
+  .about-copy h2 {
     max-width: 760px;
   }
 }
@@ -437,7 +437,7 @@
     border-width: 4px;
   }
 
-  .about-copy h1 {
+  .about-copy h2 {
     font-size: clamp(2.7rem, 13vw, 4rem);
   }
 

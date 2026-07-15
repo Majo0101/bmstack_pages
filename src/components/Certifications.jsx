@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { certificates, certificationContent } from '../content/certifications.js'
+import { getScrollBehavior } from '../utils/navigation.js'
 import './Certifications.css'
 
 function ExternalArrow() {
@@ -30,7 +31,7 @@ export default function Certifications({ language = 'EN' }) {
     if (rail && card) {
       const railLeft = rail.getBoundingClientRect().left
       const cardLeft = card.getBoundingClientRect().left
-      rail.scrollTo({ left: rail.scrollLeft + cardLeft - railLeft, behavior: 'smooth' })
+      rail.scrollTo({ left: rail.scrollLeft + cardLeft - railLeft, behavior: getScrollBehavior() })
     }
   }
 

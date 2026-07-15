@@ -19,6 +19,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 html.intro-scroll-locked,
 html.intro-scroll-locked body {
   overflow: hidden;

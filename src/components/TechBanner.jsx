@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import python from '../assets/tech/python.svg'
 import spark from '../assets/tech/spark.svg'
 import databricks from '../assets/tech/databricks.svg'
@@ -41,15 +42,27 @@ function ToolList({ hidden = false }) {
 
 export default function TechBanner({ language = 'EN' }) {
   const text = bannerContent[language.toUpperCase()] ?? bannerContent.EN
+  const [isPaused, setIsPaused] = useState(false)
 
   return (
     <section className="tech-banner" aria-label={text.label}>
-      <div className="tech-heading" aria-hidden="true">
+      <div className="tech-heading">
         <span>{text.label}</span>
-        <span>02 / TOOLBOX</span>
+        <div>
+          <span>02 / TOOLBOX</span>
+          <button
+            className="tech-control"
+            type="button"
+            onClick={() => setIsPaused((paused) => !paused)}
+            aria-label={isPaused ? text.play : text.pause}
+            aria-pressed={isPaused}
+          >
+            <span aria-hidden="true">{isPaused ? '▶' : 'Ⅱ'}</span>
+          </button>
+        </div>
       </div>
 
-      <div className="tech-ribbon">
+      <div className={`tech-ribbon ${isPaused ? 'is-paused' : ''}`}>
         <div className="tech-track">
           <ToolList />
           <ToolList hidden />

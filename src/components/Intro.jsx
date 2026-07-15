@@ -94,7 +94,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
         <span>BMSTACK / DIGITAL RESUME / 2026</span>
       </div>
 
-      <nav className="intro-nav" aria-label="Primary navigation">
+      <nav className="intro-nav" aria-label="Primary navigation" inert={!isReady}>
         <a className="intro-brand" href={window.location.pathname} onClick={reloadPage} aria-label="Reload Marian Bodnar home">
           <span className="intro-brand-copy">
             <strong>{text.name}</strong>
@@ -123,7 +123,7 @@ export default function Intro({ language = 'EN', onLanguageChange }) {
         </button>
       </nav>
 
-      <div className="intro-content">
+      <div className="intro-content" inert={!isReady}>
         <div className="intro-side-note">
           <span>01 / INTRO</span>
           <p>{text.kicker}</p>

@@ -1,4 +1,4 @@
-import profilePhoto from '../assets/profile-photo.jpg'
+import profilePhoto from '../assets/profile-photo.webp'
 import profileFrame from '../assets/profile-frame.svg'
 import aboutMeContent from '../content/aboutMe.js'
 import './AboutMe.css'
@@ -24,7 +24,7 @@ export default function AboutMe({ language = 'EN' }) {
   const cvUrl = `${import.meta.env.BASE_URL}Marian-Bodnar-CV.pdf`
 
   return (
-    <main className="about-page">
+    <div className="about-page">
       <section className="about-section" aria-labelledby="about-title">
         <header className="about-topline">
           <div className="about-label">
@@ -43,7 +43,15 @@ export default function AboutMe({ language = 'EN' }) {
             <div className="about-portrait-shell">
               <div className="about-portrait-glow" aria-hidden="true" />
               <div className="about-portrait">
-                <img className="about-photo" src={profilePhoto} alt={text.portraitAlt} />
+                <img
+                  className="about-photo"
+                  src={profilePhoto}
+                  alt={text.portraitAlt}
+                  width="1200"
+                  height="1255"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <img className="about-frame" src={profileFrame} alt="" aria-hidden="true" />
               </div>
               <div className="about-portrait-tag" aria-hidden="true">
@@ -55,7 +63,7 @@ export default function AboutMe({ language = 'EN' }) {
 
           <div className="about-copy">
             <p className="about-greeting">{text.greeting}</p>
-            <h1 id="about-title">{text.title}</h1>
+            <h2 id="about-title">{text.title}</h2>
             <p className="about-intro">{text.intro}</p>
 
             <dl className="about-details">
@@ -104,6 +112,6 @@ export default function AboutMe({ language = 'EN' }) {
           <span>Scroll to explore</span>
         </footer>
       </section>
-    </main>
+    </div>
   )
 }
