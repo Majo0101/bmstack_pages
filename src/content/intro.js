@@ -14,7 +14,7 @@ const introContent = {
       'Building analytical datasets and data pipelines with Python, SQL, Spark, Delta Lake and Microsoft Fabric for reporting, advanced analytics and machine-learning use cases.',
     explore: 'Explore profile',
     location: 'Based in Europe',
-    availability: 'Analyze / build / deliver',
+    availability: 'Analyze · build · deliver',
   },
   SK: {
     name: 'Marián Bodnár',
@@ -31,7 +31,7 @@ const introContent = {
       'Tvorím analytické datasety a dátové pipeline s využitím Pythonu, SQL, Sparku, Delta Lake a Microsoft Fabric pre reporting, pokročilú analytiku a úlohy strojového učenia.',
     explore: 'Pozrieť profil',
     location: 'Pôsobím v Európe',
-    availability: 'Analyze / build / deliver',
+    availability: 'Analyze · build · deliver',
   },
 }
 

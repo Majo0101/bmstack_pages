@@ -17,7 +17,7 @@ export default function Experience({ language = 'EN' }) {
       <div className="experience-shell">
         <header className="experience-header">
           <div className="experience-label">
-            <span>04</span>
+            <span>05</span>
             {text.label}
           </div>
           <p>Professional timeline / 2016 — 2026</p>
@@ -26,7 +26,7 @@ export default function Experience({ language = 'EN' }) {
         <div className="experience-layout">
           <aside className="experience-intro">
             <div className="experience-intro-sticky">
-              <p className="experience-kicker">Work history / 04</p>
+              <p className="experience-kicker">Work history / 05</p>
               <h2 id="experience-title">{text.title}</h2>
               <p className="experience-summary">{text.intro}</p>
 

@@ -2,9 +2,9 @@ const aboutMeContent = {
   EN: {
     label: 'About me',
     greeting: "Hello, I'm Marian.",
-    title: 'I turn data into insight and keep learning how to do it better.',
+    title: 'Engineering thinking shapes the way I work with data.',
     intro:
-      'I am a Data Scientist focused on analytics and practical data work. My toolkit includes Python, SQL, Apache Spark, Microsoft Fabric and Databricks. I also hold Data Engineering certifications and continue building experience through work and study.',
+      'My path into data began in industrial engineering and automation, where reliable systems, careful diagnostics and practical problem-solving were part of everyday work. That experience now shapes my approach to data science and data engineering. I combine an understanding of the processes behind the data with building trustworthy solutions and communicating results clearly to the people who use them. Fun fact: I am still a qualified electrician authorized to supervise electrical operations.',
     focusLabel: 'Current focus',
     focus: 'Data Science & Engineering',
     toolsLabel: 'Core toolkit',
@@ -12,15 +12,15 @@ const aboutMeContent = {
     cv: 'Download résumé',
     linkedin: 'LinkedIn profile',
     github: 'GitHub profile',
-    status: 'Learning · building · improving',
+    status: 'Metering · GIS · customer data',
     portraitAlt: 'Portrait of Marian Bodnar',
   },
   SK: {
     label: 'O mne',
     greeting: 'Ahoj, som Marian.',
-    title: 'Dáta mením na poznatky a stále sa učím robiť to lepšie.',
+    title: 'Inžinierske myslenie formuje spôsob, akým pracujem s dátami.',
     intro:
-      'Som Data Scientist zameraný na analytiku a praktickú prácu s dátami. Pracujem s Python, SQL, Apache Spark, Microsoft Fabric a Databricks. Mám tiež certifikácie v oblasti Data Engineering a ďalej získavam skúsenosti prácou aj štúdiom.',
+      'Moja cesta k dátam sa začala v priemyselnom inžinierstve a automatizácii, kde boli spoľahlivé systémy, dôsledná diagnostika a praktické riešenie problémov každodennou súčasťou práce. Táto skúsenosť dnes formuje môj prístup k data science a data engineeringu. Pri práci prepájam pochopenie procesov za dátami s tvorbou dôveryhodných riešení a zrozumiteľnou komunikáciou výsledkov ľuďom, ktorí ich používajú. Fun fact: stále som aj kvalifikovaný elektrotechnik s oprávnením na riadenie prevádzky.',
     focusLabel: 'Aktuálne zameranie',
     focus: 'Data Science & Engineering',
     toolsLabel: 'Hlavné nástroje',
@@ -28,7 +28,7 @@ const aboutMeContent = {
     cv: 'Stiahnuť životopis',
     linkedin: 'LinkedIn profil',
     github: 'GitHub profil',
-    status: 'Učím sa · tvorím · zlepšujem sa',
+    status: 'Metering · GIS · customer data',
     portraitAlt: 'Portrét Mariana Bodnára',
   },
 }

@@ -28,7 +28,7 @@ export default function AboutMe({ language = 'EN' }) {
       <section className="about-section" aria-labelledby="about-title">
         <header className="about-topline">
           <div className="about-label">
-            <span>01</span>
+            <span>03</span>
             {text.label}
           </div>
 

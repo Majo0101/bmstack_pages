@@ -31,7 +31,7 @@ export default function Contact({ language = 'EN' }) {
       <div className="contact-shell">
         <header className="contact-header">
           <div className="contact-label">
-            <span>06</span>
+            <span>07</span>
             {text.label}
           </div>
           <p>BMSTACK.EU / {year}</p>

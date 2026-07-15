@@ -106,7 +106,7 @@ export default function Education({ language = 'EN' }) {
       <div className="education-shell">
         <header className="education-header">
           <div className="education-label">
-            <span>03</span>
+            <span>04</span>
             {text.label}
           </div>
           <p>2006 — 2026</p>
@@ -114,7 +114,7 @@ export default function Education({ language = 'EN' }) {
 
         <div className="education-layout">
           <div className="education-copy">
-            <p className="education-kicker">Academic journey / 03</p>
+            <p className="education-kicker">Academic journey / 04</p>
             <h2 id="education-title">{text.title}</h2>
             <p className="education-intro">{text.intro}</p>
 

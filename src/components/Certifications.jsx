@@ -69,7 +69,7 @@ export default function Certifications({ language = 'EN' }) {
       <div className="certifications-shell">
         <header className="certifications-header">
           <div className="certifications-label">
-            <span>05</span>
+            <span>06</span>
             {text.label}
           </div>
           <p>{String(certificates.length).padStart(2, '0')} / {text.count}</p>
