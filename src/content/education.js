@@ -1,9 +1,9 @@
 const educationContent = {
   EN: {
     label: 'Education',
-    title: 'Education, one step at a time.',
+    title: 'From electrical engineering to applied informatics and data systems.',
     intro:
-      'A technical foundation followed by applied informatics, data-focused study and continuous professional development.',
+      'My education connects a technical foundation with applied informatics and data-focused study. I continue developing this knowledge alongside full-time work and apply new concepts directly in practice.',
     current: 'Current',
     artLabel: 'Data and information technology learning path',
     pathAccent: 'Continuous',
@@ -43,9 +43,9 @@ const educationContent = {
   },
   SK: {
     label: 'Vzdelanie',
-    title: 'Vzdelanie, krok za krokom.',
+    title: 'Od elektrotechniky cez aplikovanú informatiku až po dátové systémy.',
     intro:
-      'Technický základ, aplikovaná informatika, štúdium zamerané na dáta a neustály odborný rozvoj.',
+      'Moje vzdelanie prepája technický základ s aplikovanou informatikou a štúdiom zameraným na dáta. Svoje znalosti si ďalej rozvíjam popri práci na plný úväzok a nové poznatky prenášam priamo do praxe.',
     current: 'Aktuálne',
     artLabel: 'Vzdelávacia cesta v oblasti dát a informačných technológií',
     pathAccent: 'Kontinuálna',
