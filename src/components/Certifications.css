@@ -210,6 +210,10 @@
   transform: translate(-3px, -3px);
 }
 
+.certificate-rail article:hover {
+  transform: translateY(-3px);
+}
+
 .certificate-image {
   position: relative;
   min-height: 280px;

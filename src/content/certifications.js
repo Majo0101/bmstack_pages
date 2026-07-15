@@ -13,18 +13,6 @@ const certificates = [
     featured: true,
   },
   {
-    code: 'AI-900',
-    title: 'Microsoft Certified: Azure AI Fundamentals',
-    provider: 'Microsoft',
-    date: { EN: 'Issued 03 Jul 2025', SK: 'Vydané 3. 7. 2025' },
-    description: {
-      EN: 'Fundamentals of AI workloads in Azure, including machine learning, computer vision, natural language processing, and generative AI.',
-      SK: 'Základy AI workloadov v Azure vrátane machine learningu, computer vision, natural language processing a generatívnej AI.',
-    },
-    image: '/certificates/ai900-small.jpg',
-    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/12479247AAE2DC29?sharingId=22293332490A649C',
-  },
-  {
     code: 'DP-600',
     title: 'Microsoft Certified: Fabric Analytics Engineer Associate',
     provider: 'Microsoft',
@@ -35,6 +23,18 @@ const certificates = [
     },
     image: '/certificates/dp600-small.jpg',
     verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/25C3B14E97ACC957?sharingId=22293332490A649C',
+  },
+  {
+    code: 'AI-900',
+    title: 'Microsoft Certified: Azure AI Fundamentals',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 03 Jul 2025', SK: 'Vydané 3. 7. 2025' },
+    description: {
+      EN: 'Fundamentals of AI workloads in Azure, including machine learning, computer vision, natural language processing, and generative AI.',
+      SK: 'Základy AI workloadov v Azure vrátane machine learningu, computer vision, natural language processing a generatívnej AI.',
+    },
+    image: '/certificates/ai900-small.jpg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/12479247AAE2DC29?sharingId=22293332490A649C',
   },
   {
     code: 'DP-900',
@@ -61,6 +61,18 @@ const certificates = [
     verifyUrl: 'https://www.udemy.com/certificate/UC-99fbeff4-f5fe-41cb-8ae8-0b105ea39309/',
   },
   {
+    code: 'PYTHON / ML',
+    title: 'Python for Data Science and Machine Learning Bootcamp',
+    provider: 'Udemy',
+    date: { EN: 'Issued 27 Mar 2023', SK: 'Vydané 27. 3. 2023' },
+    description: {
+      EN: 'Data science workflows with NumPy, Pandas, visualization libraries, scikit-learn, and an introduction to Spark.',
+      SK: 'Data science workflow s NumPy, Pandas, vizualizačnými knižnicami, scikit-learn a úvodom do Spark.',
+    },
+    image: '/certificates/udemy-2-small.jpg',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-2bbe3531-d9bc-4274-b52a-c5ae1310e497/',
+  },
+  {
     code: 'PANDAS',
     title: 'Data Analysis with Pandas and Python',
     provider: 'Udemy',
@@ -73,16 +85,15 @@ const certificates = [
     verifyUrl: 'https://www.udemy.com/certificate/UC-f578a39e-385c-4054-a32d-959fb4030bbb/',
   },
   {
-    code: 'PYTHON / ML',
-    title: 'Python for Data Science and Machine Learning Bootcamp',
-    provider: 'Udemy',
-    date: { EN: 'Issued 27 Mar 2023', SK: 'Vydané 27. 3. 2023' },
+    code: 'POWER BI',
+    title: 'Microsoft Power BI: Smart Data Visualization',
+    provider: 'Seduo',
+    date: { EN: 'Issued 30 Apr 2023', SK: 'Vydané 30. 4. 2023' },
     description: {
-      EN: 'Data science workflows with NumPy, Pandas, visualization libraries, scikit-learn, and an introduction to Spark.',
-      SK: 'Data science workflow s NumPy, Pandas, vizualizačnými knižnicami, scikit-learn a úvodom do Spark.',
+      EN: 'Interactive data visualization, data preparation, DAX, and publishing Power BI dashboards online.',
+      SK: 'Interaktívna vizualizácia dát, príprava dát, DAX a publikovanie Power BI dashboardov online.',
     },
-    image: '/certificates/udemy-2-small.jpg',
-    verifyUrl: 'https://www.udemy.com/certificate/UC-2bbe3531-d9bc-4274-b52a-c5ae1310e497/',
+    image: '/certificates/seduo-2-small.jpg',
   },
   {
     code: 'MYSQL',
@@ -96,25 +107,14 @@ const certificates = [
     image: '/certificates/udemy-5-small.jpg',
     verifyUrl: 'https://www.udemy.com/certificate/UC-65bd5a60-6463-41f2-95e2-66feb4059340/',
   },
-  {
-    code: 'POWER BI',
-    title: 'Microsoft Power BI: Smart Data Visualization',
-    provider: 'Seduo',
-    date: { EN: 'Issued 30 Apr 2023', SK: 'Vydané 30. 4. 2023' },
-    description: {
-      EN: 'Interactive data visualization, data preparation, DAX, and publishing Power BI dashboards online.',
-      SK: 'Interaktívna vizualizácia dát, príprava dát, DAX a publikovanie Power BI dashboardov online.',
-    },
-    image: '/certificates/seduo-2-small.jpg',
-  },
 ]
 
 const certificationContent = {
   EN: {
     label: 'Certifications',
-    eyebrow: 'Continuous learning / verified skills',
-    title: 'Proof behind the progress.',
-    intro: 'A focused selection of credentials supporting my work across data science, analytics, and data engineering.',
+    eyebrow: 'Verified knowledge',
+    title: 'Certified knowledge across data and analytics.',
+    intro: 'Selected Microsoft credentials and professional courses complementing hands-on experience with modern data platforms.',
     verify: 'Verify certificate',
     recorded: 'Certificate recorded',
     provider: 'Issuer',
@@ -125,9 +125,9 @@ const certificationContent = {
   },
   SK: {
     label: 'Certifikáty',
-    eyebrow: 'Kontinuálne vzdelávanie / overené znalosti',
-    title: 'Výsledky podložené certifikátmi.',
-    intro: 'Výber certifikátov, ktoré dopĺňajú moju prax v data science, analytike a data engineering.',
+    eyebrow: 'Overené znalosti',
+    title: 'Certifikované znalosti v oblasti dát a analytiky.',
+    intro: 'Výber Microsoft certifikácií a odborných kurzov, ktoré dopĺňajú praktické skúsenosti s modernými dátovými platformami.',
     verify: 'Overiť certifikát',
     recorded: 'Certifikát evidovaný',
     provider: 'Vydavateľ',
