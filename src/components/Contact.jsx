@@ -86,8 +86,9 @@ export default function Contact({ language = 'EN' }) {
         </div>
 
         <div className="contact-footerline">
-          <span>© {year} Marian Bodnar / {text.resume}</span>
           <span className="contact-status"><i aria-hidden="true" />{text.status}</span>
+          <span className="contact-copyright">© {year} Marian Bodnar</span>
+          <span className="contact-resume"><i aria-hidden="true" />{text.resume}</span>
         </div>
       </div>
     </footer>

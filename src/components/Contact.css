@@ -351,7 +351,7 @@
 .contact-footerline {
   display: grid;
   padding-top: 22px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr auto 1fr;
   gap: 25px;
   color: #9a9c95;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -362,14 +362,24 @@
   text-transform: uppercase;
 }
 
-.contact-status {
+.contact-status,
+.contact-resume {
   display: inline-flex;
   align-items: center;
-  justify-self: end;
   gap: 8px;
 }
 
-.contact-status i {
+.contact-copyright {
+  justify-self: center;
+  text-align: center;
+}
+
+.contact-resume {
+  justify-self: end;
+}
+
+.contact-status i,
+.contact-resume i {
   width: 7px;
   height: 7px;
   background: #c0f203;
@@ -444,8 +454,11 @@
     grid-template-columns: 1fr;
   }
 
-  .contact-status {
+  .contact-status,
+  .contact-copyright,
+  .contact-resume {
     justify-self: start;
+    text-align: left;
   }
 
   .contact-shell::after {
