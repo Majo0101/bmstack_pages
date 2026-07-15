@@ -31,7 +31,7 @@ export default function Contact({ language = 'EN' }) {
       <div className="contact-shell">
         <header className="contact-header">
           <div className="contact-label">
-            <span>07</span>
+            <span>08</span>
             {text.label}
           </div>
           <p>BMSTACK.EU / {year}</p>
@@ -87,7 +87,6 @@ export default function Contact({ language = 'EN' }) {
 
         <div className="contact-footerline">
           <span>© {year} Marian Bodnar / {text.resume}</span>
-          <span>{text.location}</span>
           <span className="contact-status"><i aria-hidden="true" />{text.status}</span>
         </div>
       </div>

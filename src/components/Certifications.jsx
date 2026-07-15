@@ -117,7 +117,7 @@ export default function Certifications({ language = 'EN' }) {
         </div>
 
         <div className="certificate-rail-header">
-          <p><span aria-hidden="true">09</span> {text.browse}</p>
+          <p><span aria-hidden="true">07</span> {text.browse}</p>
           <div>
             <button
               type="button"
