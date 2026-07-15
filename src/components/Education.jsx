@@ -141,9 +141,11 @@ export default function Education({ language = 'EN' }) {
                         aria-disabled={entry.projectPlaceholder || undefined}
                         tabIndex={entry.projectPlaceholder ? -1 : undefined}
                         onClick={entry.projectPlaceholder ? (event) => event.preventDefault() : undefined}
+                        target={entry.projectPlaceholder ? undefined : '_blank'}
+                        rel={entry.projectPlaceholder ? undefined : 'noreferrer'}
                       >
                         {entry.projectLabel}
-                        <span aria-hidden="true">↗</span>
+                        <span aria-hidden="true">{entry.projectPlaceholder ? '—' : '↗'}</span>
                       </a>
                     )}
                   </article>

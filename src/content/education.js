@@ -25,8 +25,7 @@ const educationContent = {
         description:
           'Studies focused on data mining methods and their application in large-scale data warehouse environments (Big Data), including an introduction to business intelligence and analytical systems.',
         projectLabel: 'View bachelor thesis',
-        projectUrl: '#bachelor-thesis',
-        projectPlaceholder: true,
+        projectUrl: 'https://opac.crzp.sk/?fn=detailBiblioForm&sid=9EB7DDC054CB7EBFE270DDEAFF98',
       },
       {
         period: '2025 — Present',
@@ -35,6 +34,9 @@ const educationContent = {
         school: 'Paneuropean University, Bratislava',
         description:
           'Master studies focused on enterprise information systems, distributed systems, advanced intelligent systems, and information system security within modern IT environments.',
+        projectLabel: 'View master thesis',
+        projectUrl: '#master-thesis',
+        projectPlaceholder: true,
         current: true,
       },
     ],
@@ -65,8 +67,7 @@ const educationContent = {
         description:
           'Štúdium zamerané na metódy dolovania dát (data mining) a ich využitie v prostredí rozsiahlych dátových skladov (Big Data), vrátane úvodu do nástrojov business intelligence a analytických systémov.',
         projectLabel: 'Zobraziť bakalársku prácu',
-        projectUrl: '#bachelor-thesis',
-        projectPlaceholder: true,
+        projectUrl: 'https://opac.crzp.sk/?fn=detailBiblioForm&sid=9EB7DDC054CB7EBFE270DDEAFF98',
       },
       {
         period: '2025 — Aktuálne',
@@ -75,6 +76,9 @@ const educationContent = {
         school: 'Paneurópska vysoká škola, Bratislava',
         description:
           'Magisterské štúdium zamerané na podnikové informačné systémy, distribuované systémy, pokročilé inteligentné systémy a bezpečnosť informačných systémov v moderných IT prostrediach.',
+        projectLabel: 'Zobraziť diplomovú prácu',
+        projectUrl: '#master-thesis',
+        projectPlaceholder: true,
         current: true,
       },
     ],

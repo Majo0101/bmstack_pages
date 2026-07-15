@@ -253,7 +253,16 @@
 }
 
 .education-project-link[aria-disabled='true'] {
+  color: #6f716b;
+  background: #d9dad4;
+  border-color: #b8bab3;
   cursor: default;
+}
+
+.education-project-link[aria-disabled='true'] span {
+  color: #6f716b;
+  background: #ecece7;
+  border: 1px solid #c5c7c0;
 }
 
 .education-visual {
