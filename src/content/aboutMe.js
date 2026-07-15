@@ -29,7 +29,7 @@ const aboutMeContent = {
     linkedin: 'LinkedIn profil',
     github: 'GitHub profil',
     status: 'Metering · GIS · customer data',
-    portraitAlt: 'Portrét Mariana Bodnára',
+    portraitAlt: 'Fotografia – Marian Bodnar',
   },
 }
 

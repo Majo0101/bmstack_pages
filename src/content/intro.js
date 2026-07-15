@@ -17,7 +17,7 @@ const introContent = {
     availability: 'Analyze · build · deliver',
   },
   SK: {
-    name: 'Marián Bodnár',
+    name: 'Marian Bodnar',
     role: 'Data Scientist',
     about: 'O mne',
     experience: 'Skúsenosti',
