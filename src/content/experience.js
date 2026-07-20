@@ -66,7 +66,7 @@ const experienceContent = {
         employer: 'Západoslovenská distribučná, a.s. — Skupina ZSE',
         location: 'Bratislava, Slovensko',
         description:
-          'Navrhujem a udržiavam škálovateľné dátové pipeline s využitím Apache Spark a Delta Lake na spracovanie rozsiahlych datasetov a opakovaných automatizovaných analytických výpočtov. Analyzujem dátové štruktúry a toky existujúcich aplikácií a tvorím end-to-end reportingové riešenia od extrakcie a transformácie dát cez analytické modelovanie a reporting až po nasadenie prostredníctvom Microsoft Fabric CI/CD. Tvorím opakovane použiteľné analytické datasety a feature vrstvy naprieč doménami GIS, merania a zákazníckych dát. Využívam kontroly kvality dát, exploračnú analýzu a validáciu s dôrazom na výkon, spoľahlivosť a dôveryhodné výstupy.',
+          'Návrh a údržba škálovateľných dátových pipeline s využitím Apache Spark a Delta Lake na spracovanie rozsiahlych datasetov a opakovaných automatizovaných analytických výpočtov. Analýza dátových štruktúr a tokov existujúcich aplikácií a tvorba end-to-end reportingových riešení od extrakcie a transformácie dát cez analytické modelovanie a reporting až po nasadenie prostredníctvom Microsoft Fabric CI/CD. Tvorba opakovane použiteľných analytických datasetov a feature vrstiev naprieč doménami GIS, merania a zákazníckych dát. Kontroly kvality dát, exploračná analýza a validácia s dôrazom na výkon, spoľahlivosť a dôveryhodné výstupy.',
         current: true,
       },
       {
@@ -75,7 +75,7 @@ const experienceContent = {
         employer: 'Západoslovenská distribučná, a.s. — Skupina ZSE',
         location: 'Bratislava, Slovensko',
         description:
-          'Tvoril som analytické workflow v SQL a Pythone na transformáciu prevádzkových dát do opakovane použiteľných datasetov, reportov a Power BI dashboardov. Vykonával som exploračnú analýzu a tvoril prediktívne modely na identifikáciu trendov, vzorov a prakticky využiteľných biznisových poznatkov. Automatizoval som opakované procesy prípravy dát a reportingu s cieľom obmedziť manuálnu prácu a zvýšiť konzistentnosť výstupov. Pripravoval a integroval som dáta pre interné projekty a zabezpečoval ich dostupnosť v prostrediach Data Lake a Data Warehouse v Microsoft Fabric.',
+          'Tvorba analytických workflow v SQL a Pythone na transformáciu prevádzkových dát do opakovane použiteľných datasetov, reportov a Power BI dashboardov. Exploračná analýza a tvorba prediktívnych modelov na identifikáciu trendov, vzorov a prakticky využiteľných biznisových poznatkov. Automatizácia opakovaných procesov prípravy dát a reportingu s cieľom obmedziť manuálnu prácu a zvýšiť konzistentnosť výstupov. Príprava a integrácia dát pre interné projekty a zabezpečenie ich dostupnosti v prostrediach Data Lake a Data Warehouse v Microsoft Fabric.',
       },
       {
         period: '2023 — 2024',
@@ -83,7 +83,7 @@ const experienceContent = {
         employer: 'Západoslovenská distribučná, a.s. — Skupina ZSE',
         location: 'Bratislava, Slovensko',
         description:
-          'Tvoril som pracovné postupy a metodiky správy dát pre oblasť inteligentného merania. Vyvíjal a spravoval som automatizačné a RPA riešenia s využitím Microsoft Power Automate a Blue Prism a pripravoval analytické datasety, reporty a štatistiky pomocou Pythonu, SQL, PySparku a Power BI. Príležitostne som koordinoval prácu niekoľkých kolegov, podieľal sa na IT projektoch a pôsobil ako kľúčový používateľ pridelených systémov.',
+          'Tvorba pracovných postupov a metodík správy dát pre oblasť inteligentného merania. Vývoj a správa automatizačných a RPA riešení s využitím Microsoft Power Automate a Blue Prism a príprava analytických datasetov, reportov a štatistík pomocou Pythonu, SQL, PySparku a Power BI. Príležitostná koordinácia práce niekoľkých kolegov, účasť na IT projektoch a pôsobenie ako kľúčový používateľ pridelených systémov.',
       },
       {
         period: '2022 — 2023',
@@ -91,7 +91,7 @@ const experienceContent = {
         employer: 'Západoslovenská distribučná, a.s. — Skupina ZSE',
         location: 'Bratislava, Slovensko',
         description:
-          'Spravoval a opravoval som dáta z oblasti merania v systémoch SAP, IS-U/DM a EDM. Definoval som štatistické reporty, spravoval tímové IT systémy a pripravoval prevádzkové postupy. Podieľal som sa na biznisových IT projektoch, automatizoval procesy pomocou Microsoft Power Automate, tvoril interné aplikácie v Power Apps a spracovával a vizualizoval dáta s využitím Pythonu, SQL a Power BI.',
+          'Správa a oprava dát z oblasti merania v systémoch SAP, IS-U/DM a EDM. Definovanie štatistických reportov, správa tímových IT systémov a príprava prevádzkových postupov. Účasť na biznisových IT projektoch, automatizácia procesov pomocou Microsoft Power Automate, tvorba interných aplikácií v Power Apps a spracovanie a vizualizácia dát s využitím Pythonu, SQL a Power BI.',
       },
       {
         period: '2016 — 2021',
@@ -99,7 +99,7 @@ const experienceContent = {
         employer: 'Freelance — samostatne zárobkovo činný',
         location: 'Revúca, Slovensko',
         description:
-          'Vykonával som servis a diagnostiku priemyselných a energetických technológií vrátane bioplynových staníc, kogeneračných jednotiek, elektrických rozvádzačov a automatizačných systémov. Vyrábal a upravoval som riadiace rozvádzače, pracoval s elektrickými zariadeniami do 1 000 V a so systémami využívajúcimi PLC Beckhoff, Siemens a Wago. Ako kvalifikovaný elektrotechnik s oprávnením na riadenie prevádzky som viedol a koordinoval technikov pri servisných a montážnych prácach. Vykonával som technické kontroly, pripravoval dokumentáciu, realizoval opravy a vytváral automatizačné riešenia v rôznych priemyselných prostrediach.',
+          'Servis a diagnostika priemyselných a energetických technológií vrátane bioplynových staníc, kogeneračných jednotiek, elektrických rozvádzačov a automatizačných systémov. Výroba a úprava riadiacich rozvádzačov, práca s elektrickými zariadeniami do 1 000 V a so systémami využívajúcimi PLC Beckhoff, Siemens a Wago. Vedenie a koordinácia technikov pri servisných a montážnych prácach ako kvalifikovaný elektrotechnik s oprávnením na riadenie prevádzky. Technické kontroly, príprava dokumentácie, realizácia opráv a tvorba automatizačných riešení v rôznych priemyselných prostrediach.',
       },
     ],
   },
