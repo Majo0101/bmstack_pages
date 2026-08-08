@@ -79,10 +79,10 @@ img {
   -webkit-mask-image:
     linear-gradient(
       to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.12) 35px,
-      rgba(0, 0, 0, 0.72) 95px,
-      #000 150px,
+      transparent 120px,
+      rgba(0, 0, 0, 0.12) 225px,
+      rgba(0, 0, 0, 0.72) 390px,
+      #000 520px,
       #000 calc(100% - 150px),
       rgba(0, 0, 0, 0.72) calc(100% - 95px),
       rgba(0, 0, 0, 0.12) calc(100% - 35px),
@@ -101,10 +101,10 @@ img {
   mask-image:
     linear-gradient(
       to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.12) 35px,
-      rgba(0, 0, 0, 0.72) 95px,
-      #000 150px,
+      transparent 120px,
+      rgba(0, 0, 0, 0.12) 225px,
+      rgba(0, 0, 0, 0.72) 390px,
+      #000 520px,
       #000 calc(100% - 150px),
       rgba(0, 0, 0, 0.72) calc(100% - 95px),
       rgba(0, 0, 0, 0.12) calc(100% - 35px),
@@ -133,9 +133,9 @@ img {
     -webkit-mask-image:
       linear-gradient(
         to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.18) 45px,
-        #000 130px,
+        transparent 100px,
+        rgba(0, 0, 0, 0.18) 190px,
+        #000 380px,
         #000 calc(100% - 130px),
         rgba(0, 0, 0, 0.18) calc(100% - 45px),
         transparent 100%
@@ -145,9 +145,9 @@ img {
     mask-image:
       linear-gradient(
         to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.18) 45px,
-        #000 130px,
+        transparent 100px,
+        rgba(0, 0, 0, 0.18) 190px,
+        #000 380px,
         #000 calc(100% - 130px),
         rgba(0, 0, 0, 0.18) calc(100% - 45px),
         transparent 100%
