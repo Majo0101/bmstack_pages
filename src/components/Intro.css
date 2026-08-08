@@ -652,9 +652,15 @@
   }
 }
 
-@media (max-width: 420px) and (max-aspect-ratio: 9 / 20) {
+@media (max-width: 620px) {
   .intro {
     min-height: auto;
+  }
+
+  .intro::before {
+    right: -58%;
+    bottom: -10%;
+    width: min(145vw, 560px);
   }
 
   .intro-content {

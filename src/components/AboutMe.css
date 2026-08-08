@@ -469,7 +469,7 @@
   }
 }
 
-@media (max-width: 420px) and (max-aspect-ratio: 9 / 20) {
+@media (max-width: 620px) {
   .about-section {
     min-height: auto;
   }
