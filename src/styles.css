@@ -75,14 +75,18 @@ img {
   background:
     linear-gradient(rgba(36, 36, 36, 0.055) 1px, transparent 1px),
     linear-gradient(90deg, rgba(36, 36, 36, 0.055) 1px, transparent 1px);
-  background-size: 48px 48px;
+  background-size: 64px 64px;
   -webkit-mask-image:
     linear-gradient(
       to bottom,
-      transparent 120px,
-      rgba(0, 0, 0, 0.12) 225px,
-      rgba(0, 0, 0, 0.72) 390px,
-      #000 520px
+      transparent 0,
+      rgba(0, 0, 0, 0.12) 35px,
+      rgba(0, 0, 0, 0.72) 95px,
+      #000 150px,
+      #000 calc(100% - 150px),
+      rgba(0, 0, 0, 0.72) calc(100% - 95px),
+      rgba(0, 0, 0, 0.12) calc(100% - 35px),
+      transparent 100%
     ),
     linear-gradient(
       90deg,
@@ -97,10 +101,14 @@ img {
   mask-image:
     linear-gradient(
       to bottom,
-      transparent 120px,
-      rgba(0, 0, 0, 0.12) 225px,
-      rgba(0, 0, 0, 0.72) 390px,
-      #000 520px
+      transparent 0,
+      rgba(0, 0, 0, 0.12) 35px,
+      rgba(0, 0, 0, 0.72) 95px,
+      #000 150px,
+      #000 calc(100% - 150px),
+      rgba(0, 0, 0, 0.72) calc(100% - 95px),
+      rgba(0, 0, 0, 0.12) calc(100% - 35px),
+      transparent 100%
     ),
     linear-gradient(
       90deg,
@@ -125,18 +133,24 @@ img {
     -webkit-mask-image:
       linear-gradient(
         to bottom,
-        transparent 100px,
-        rgba(0, 0, 0, 0.18) 190px,
-        #000 380px
+        transparent 0,
+        rgba(0, 0, 0, 0.18) 45px,
+        #000 130px,
+        #000 calc(100% - 130px),
+        rgba(0, 0, 0, 0.18) calc(100% - 45px),
+        transparent 100%
       ),
       linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
     -webkit-mask-composite: source-in;
     mask-image:
       linear-gradient(
         to bottom,
-        transparent 100px,
-        rgba(0, 0, 0, 0.18) 190px,
-        #000 380px
+        transparent 0,
+        rgba(0, 0, 0, 0.18) 45px,
+        #000 130px,
+        #000 calc(100% - 130px),
+        rgba(0, 0, 0, 0.18) calc(100% - 45px),
+        transparent 100%
       ),
       linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
     mask-composite: intersect;

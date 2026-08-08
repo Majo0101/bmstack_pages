@@ -185,7 +185,7 @@
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: linear-gradient(to bottom, #000, transparent 84%);
+  mask-image: linear-gradient(to bottom, #000, transparent 92%);
 }
 
 .intro-nav {
@@ -634,6 +634,10 @@
 
   .intro h1 > span:nth-child(2) {
     padding-left: 0;
+    color: #1d1d1d;
+    font-weight: 500;
+    -webkit-text-stroke: 0.8px rgba(247, 247, 242, 0.58);
+    paint-order: stroke fill;
   }
 
   .intro-summary-row {
