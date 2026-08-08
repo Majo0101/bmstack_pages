@@ -644,9 +644,10 @@
   }
 
   .intro-footer {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
   }
 
+  .intro-footer > span:first-child,
   .intro-footer > span:last-child {
     display: none;
   }

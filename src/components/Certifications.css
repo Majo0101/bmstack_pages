@@ -564,9 +564,7 @@
   }
 
   .certifications-header > p {
-    max-width: 140px;
-    line-height: 1.45;
-    text-align: right;
+    display: none;
   }
 
   .certifications-intro {

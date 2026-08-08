@@ -409,10 +409,7 @@
   }
 
   .about-status {
-    max-width: 125px;
-    justify-content: flex-end;
-    text-align: right;
-    line-height: 1.4;
+    display: none;
   }
 
   .about-layout {

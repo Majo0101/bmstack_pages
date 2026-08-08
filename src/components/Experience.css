@@ -390,10 +390,9 @@
     mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
   }
 
-  .experience-header > p {
-    max-width: 145px;
-    line-height: 1.45;
-    text-align: right;
+  .experience-header > p,
+  .experience-path {
+    display: none;
   }
 
   .experience-layout {

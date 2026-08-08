@@ -455,8 +455,11 @@
   }
 
   .contact-status,
-  .contact-copyright,
   .contact-resume {
+    display: none;
+  }
+
+  .contact-copyright {
     justify-self: start;
     text-align: left;
   }
