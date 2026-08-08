@@ -469,6 +469,18 @@
   }
 }
 
+@media (max-width: 420px) and (max-aspect-ratio: 9 / 20) {
+  .about-section {
+    min-height: auto;
+  }
+
+  .about-layout {
+    flex: none;
+    gap: 28px;
+    padding: 38px 0 36px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .about-frame {
     animation: none;

@@ -652,6 +652,17 @@
   }
 }
 
+@media (max-width: 420px) and (max-aspect-ratio: 9 / 20) {
+  .intro {
+    min-height: auto;
+  }
+
+  .intro-content {
+    flex: none;
+    padding: 38px 0 34px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .intro-loader {
     display: none;
