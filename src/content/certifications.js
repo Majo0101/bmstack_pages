@@ -1,5 +1,18 @@
 const certificates = [
   {
+    code: 'DP-750',
+    title: 'Microsoft Certified: Azure Databricks Data Engineer Associate',
+    provider: 'Microsoft',
+    date: { EN: 'Issued 04 Sep 2026', SK: 'Vydané 4. 9. 2026' },
+    description: {
+      EN: 'Data engineering solutions in Azure Databricks, including environment configuration, Unity Catalog governance, data processing, and deployment and maintenance of pipelines and workloads.',
+      SK: 'Dátové inžinierstvo v Azure Databricks vrátane konfigurácie prostredia, governance v Unity Catalog, spracovania dát a nasadenia a údržby pipeline a workloadov.',
+    },
+    image: '/certificates/dp750-small.png',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/C0D582D2D290CB2B?sharingId=22293332490A649C',
+    featured: true,
+  },
+  {
     code: 'DP-700',
     title: 'Microsoft Certified: Fabric Data Engineer Associate',
     provider: 'Microsoft',
@@ -10,7 +23,6 @@ const certificates = [
     },
     image: '/certificates/dp700-small.jpg',
     verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/481716C9B938F624?sharingId=22293332490A649C',
-    featured: true,
   },
   {
     code: 'DP-600',
@@ -47,18 +59,6 @@ const certificates = [
     },
     image: '/certificates/dp900-small.jpg',
     verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/27926BFC8DE6506?sharingId=22293332490A649C',
-  },
-  {
-    code: 'AZURE DATABRICKS',
-    title: 'Azure Databricks & Spark for Data Engineers',
-    provider: 'Udemy',
-    date: { EN: 'Issued 10 Mar 2024', SK: 'Vydané 10. 3. 2024' },
-    description: {
-      EN: 'Data engineering with Azure Databricks, Apache Spark, PySpark, Spark SQL, notebooks, clusters, and lakehouse architectures.',
-      SK: 'Data engineering s Azure Databricks, Apache Spark, PySpark, Spark SQL, notebookmi, clustrami a lakehouse architektúrami.',
-    },
-    image: '/certificates/udemy-6-small.jpg',
-    verifyUrl: 'https://www.udemy.com/certificate/UC-99fbeff4-f5fe-41cb-8ae8-0b105ea39309/',
   },
   {
     code: 'PYTHON / ML',
