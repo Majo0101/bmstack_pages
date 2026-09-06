@@ -6,7 +6,7 @@ const certificates = [
     date: { EN: 'Issued 04 Sep 2026', SK: 'Vydané 4. 9. 2026' },
     description: {
       EN: 'Data engineering solutions in Azure Databricks, including environment configuration, Unity Catalog governance, data processing, and deployment and maintenance of pipelines and workloads.',
-      SK: 'Dátové inžinierstvo v Azure Databricks vrátane konfigurácie prostredia, governance v Unity Catalog, spracovania dát a nasadenia a údržby pipeline a workloadov.',
+      SK: 'Data Engineering riešenia v Azure Databricks vrátane konfigurácie prostredia, governance v Unity Catalog, spracovania dát, nasadenia a údržby pipeline a workloadov.',
     },
     image: '/certificates/dp750-small.png',
     verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-gb/MarianBodnar-2041/C0D582D2D290CB2B?sharingId=22293332490A649C',
